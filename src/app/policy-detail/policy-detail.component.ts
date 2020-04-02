@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-policy-detail',
@@ -7,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyDetailComponent implements OnInit {
 
-PolicyNumber=""
+  PolicyNumber = '';
 
-CompanyCode=""
+  CompanyCode = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+
+  search() {
+    this.router.navigate(['/PolicySummary']);
   }
 
 }

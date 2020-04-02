@@ -1,4 +1,8 @@
-
+<head>
+  <link href="./policy-detail.component.scss" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: #9CC3D5FF;">
 <div class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Tabs Titles -->
@@ -12,10 +16,13 @@
   
       <!-- Login Form -->
       <form class="p-5">
+        <!-- <div class="col-md-12 pb-2">
+          <h3>Policy Search</h3>
+        </div> -->
         <input type="text" [(ngModel)]='CompanyCode' id="CompanyCode" class="fadeIn second" name="CompanyCode" placeholder="Company Code">
         <input type="text" [(ngModel)]='PolicyNumber' id="PolicyNumber" class="fadeIn third" name="PolicyNumber" placeholder="Policy Number">
-        <input type="reset" style="background-color: darksalmon;"  class="fadeIn fourth btn btn-primary col-md-4" value="reset">
-        <input type="submit"  class="fadeIn fourth btn btn-primary col-md-4 text-center" value="submit">
+        <input type="reset" style="background-color: #A2A2A1FF;"  class="fadeIn fourth btn btn-primary col-md-4" value="Reset">
+        <input type="submit"  class="fadeIn fourth btn btn-primary col-md-4 text-center" value="Search" (click)='search()'>
 
       </form>
   
@@ -26,3 +33,4 @@
   
     </div>
   </div>
+</body>
