@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PolicySummaryComponent } from './policy-summary/policy-summary.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { PolicyComponent } from './policy/policy.component';
 
 
 
@@ -16,7 +17,8 @@ import { MatTabsModule } from '@angular/material/tabs';
   declarations: [
     AppComponent,
     PolicyDetailComponent,
-    PolicySummaryComponent
+    PolicySummaryComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule,

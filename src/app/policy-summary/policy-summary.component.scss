@@ -1,31 +1,36 @@
-.wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
-    background: #9CC3D5FF;
-  }
+.policy-content{
+    text-align: left;
+    // margin-top: 20px;
+    height: 600px;
+    display: block;
+}
 
-  #formContent {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    background: #fff;
-    padding: 30px;
-    width: 100%;
-    height: 700px;
-    max-width: 600px;
-    // max-height: ;
-    position: center;
-    padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    text-align: center;
-    
-  }
+.label{
+    font-weight: 500;
+    float: left;
+    position: absolute;
 
-  mat-tab-label {
-    color: #9CC3D5FF;
+}
+
+.row1{padding-left: 10px;
+    background-color:#F1F4FFFF ;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.row2{padding-left: 10px;
+    height: 40px;
+    padding-top: 10px;
+   // background-color:#F1F4FFFF ;
+}
+
+div{
+    padding: -30px;
+    vertical-align: middle;
+}
+
+.value{
+    margin-left: 250px;
+    vertical-align: middle;
+  
 }

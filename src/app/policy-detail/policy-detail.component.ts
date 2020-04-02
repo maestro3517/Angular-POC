@@ -19,7 +19,7 @@ export class PolicyDetailComponent implements OnInit {
 
 
   search() {
-    this.router.navigate(['/PolicySummary']);
+    this.router.navigate(['/Policy']);
   }
 
 }
