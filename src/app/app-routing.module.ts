@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PolicyDetailComponent } from './policy-detail/policy-detail.component';
 import { PolicySummaryComponent } from './policy-summary/policy-summary.component';
 import { PolicyComponent } from './policy/policy.component';
+import { BillingDetailComponent } from './billing-detail/billing-detail.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'Policy',
     component: PolicyComponent
+  },
+  {
+    path:'billingDetail',
+    component:BillingDetailComponent
   }
 ];
 
