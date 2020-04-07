@@ -11,7 +11,7 @@ import { PolicySummaryComponent } from './policy-summary/policy-summary.componen
 import { MatTabsModule } from '@angular/material/tabs';
 import { PolicyComponent } from './policy/policy.component';
 import { BillingDetailComponent } from './billing-detail/billing-detail.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,6 +32,7 @@ import { BillingDetailComponent } from './billing-detail/billing-detail.componen
     MatButtonModule,
     MatTabsModule,
 
+    HttpClientModule
 
 
   ],

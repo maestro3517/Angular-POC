@@ -1,27 +1,23 @@
-<!-- <head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="./policy-detail.component.scss" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head> -->
+</head>
 
-<body>
-  <div class="wrapper fadeInDown">
-    <div id="formContent" style="height: 100vh;" class="align-items-center d-inline-flex">
-      <div class="title pt-2" style="position: absolute;top: 0;width: 750px;">  </div>
-      <div class="">
-        <form class="p-5">
-          <input type="text" [(ngModel)]='CompanyCode' id="CompanyCode" class="fadeIn second" name="CompanyCode"
-            placeholder="Company Code">
-          <input type="text" [(ngModel)]='PolicyNumber' id="PolicyNumber" class="fadeIn third" name="PolicyNumber"
-            placeholder="Policy Number">
-          <input type="reset" style="background-color: #A2A2A1FF;" class="fadeIn fourth btn btn-primary col-md-4"
-            value="Reset">
-          <input type="submit" class="fadeIn fourth btn btn-primary col-md-4 text-center" value="Search"
-            (click)='search()'>
-        </form>
-      </div>
 
-      <div class="title" style="position: absolute;bottom: 0;width: 750px;">
-      </div>
-    </div>
+<div class="wrapper fadeInDown">
+  <div class="header" > </div>
+  <div id="formContent">
+    <form class="p-5">
+      <input type="text" [(ngModel)]='Search.CompanyCode' id="CompanyCode" class="fadeIn second" name="CompanyCode"
+        placeholder="Company Code">
+      <input type="text" [(ngModel)]='Search.PolicyNumber' id="PolicyNumber" class="fadeIn third" name="PolicyNumber"
+        placeholder="Policy Number">
+      <input type="reset" style="background-color: #A2A2A1FF;" class="fadeIn fourth btn btn-primary col-md-4"
+        value="Reset">
+      <input type="submit" class="fadeIn fourth btn btn-primary col-md-4 text-center" value="Search" (click)='search()'>
+    </form>
   </div>
-</body>
+  <div class="footer" >
+  </div>
+</div>

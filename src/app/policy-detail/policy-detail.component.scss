@@ -36,10 +36,13 @@ h2 {
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  //justify-content: center;
-  width: 100%;
-  min-height: 100%;
+  width: 950px;
+  max-width: 100%;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
   //padding: 20px;
  // background: #9cc3d5ff;
 }
@@ -48,18 +51,20 @@ h2 {
   //margin-top: 60px;
   //-webkit-border-radius: 10px 10px 10px 10px;
   //border-radius: 10px 10px 10px 10px;
-  background: #fff;
-  padding: 30px;
-  width: 100%;
-  height: 100vh;
-  max-width: 750px;
   // max-height: ;
-  position: center;
-  padding: 0px;
-  text-align: center;
- //background: #FCF6F5FF;
+  //background: #FCF6F5FF;
   // -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   // box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+
+  display: inherit;
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  //position: center; 
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 #formFooter {
@@ -69,6 +74,32 @@ h2 {
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
+}
+.header{
+  display: inherit;
+
+  background-color: #00539CFF;
+  color: white;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  overflow: hidden;
+  //max-width: 100%;
+}
+
+.footer{
+  display: inherit;
+
+  background-color: #00539CFF;
+  color: white;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  overflow: hidden;
+
+ // max-width: 100%;
 }
 
 
@@ -272,8 +303,3 @@ input[type=text]:placeholder {
   box-sizing: border-box;
 }
 
-.title{
-  background-color: #00539CFF;
-  color: white;
-  height: 40px;
-}

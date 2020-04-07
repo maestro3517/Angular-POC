@@ -1,8 +1,7 @@
 .policy-content{
     text-align: left;
     // margin-top: 20px;
-    height: 80vh;
-    display: block;
+    height: inherit;
 }
 
 .label{
@@ -12,13 +11,15 @@
     padding-left: 14px;
 }
 
-.row1{padding-left: 10px;
+.row1{
+    padding-left: 10px;
     background-color:#F1F4FFFF ;
     height: 40px;
     padding-top: 10px;
 }
 
-.row2{padding-left: 10px;
+.row2{
+    padding-left: 10px;
     height: 40px;
     padding-top: 10px;
    // background-color:#F1F4FFFF ;
