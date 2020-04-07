@@ -1,19 +1,32 @@
-<div class="wrapper">
-    <div id="formContent">
-        <div class="header"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #A59C94FF;"> 
-            <div class="navbar-nav">
-                <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="#">Policy</a>
-              </div>
-        </nav>
-        <mat-tab-group >
-            <div>
-                <mat-tab label="Policy Summary" ><policy-summary></policy-summary></mat-tab>
-                <mat-tab label="Billing Details">Content 2</mat-tab>
-            </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
-        </mat-tab-group>
-        <footer class="footer"></footer>
-    </div>
+<div class="wrapper">
+    <div class="header"></div>
+    <div id="formContent">
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12" style="background-color: #A59C94FF;display: flex;">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#">Policy</a>
+                </div>
+            </nav>
+       
+
+            <mat-tab-group>
+        
+                    <mat-tab label="Policy Summary">
+                        <policy-summary></policy-summary>
+                    </mat-tab>
+                    <mat-tab label="Billing Details">
+                        <billing-detail></billing-detail>
+                    </mat-tab>
+               
+
+            </mat-tab-group>
+        </div>
+    <div class="footer"></div>
 </div>

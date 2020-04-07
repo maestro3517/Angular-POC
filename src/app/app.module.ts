@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PolicySummaryComponent } from './policy-summary/policy-summary.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { PolicyComponent } from './policy/policy.component';
-
+import { BillingDetailComponent } from './billing-detail/billing-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PolicyComponent } from './policy/policy.component';
     AppComponent,
     PolicyDetailComponent,
     PolicySummaryComponent,
-    PolicyComponent
+    PolicyComponent,
+    BillingDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { PolicyComponent } from './policy/policy.component';
     MatButtonModule,
     MatTabsModule,
 
+    HttpClientModule
 
 
   ],
